@@ -91,6 +91,9 @@ body {overflow-x:hidden;}
    }
 
   /* Content */
+  #post-62 .entry-content {
+    padding-left: 0;
+}
   .entry-header-child {
       text-align: center;
       margin-top: 1em;
