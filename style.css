@@ -1,0 +1,331 @@
+/*
+Theme Name: Contractor Child Theme
+Theme URI: http://mbmcontracting.com
+Description: A child theme of HigherImages's theme Contractor
+Author: Miranda Knee
+Author URI: http://mirandaknee.com
+Template: contractor
+Version: 0.1.0
+*/
+
+/* special width styles */
+body {overflow-x:hidden;}
+.width-50 {
+  max-width: 50%;
+  margin: 0 auto;
+}
+.width-75 {
+  max-width: 75%;
+  margin: 0 auto;
+}
+/* margin and padding */
+.no-margin { margin: 0; }
+.no-padding { padding: 0; }
+.thin-margin-top     { margin-top:      1rem; }
+.thin-margin-bottom  { margin-bottom:   1rem; }
+.margin-top          { margin-top:      3rem; }
+.margin-bottom       { margin-bottom:   3rem; }
+.medium-margin-top    { margin-top:     6rem; }
+.medium-margin-bottom { margin-bottom:  6rem; }
+.large-margin-top    { margin-top:     10rem; }
+.large-margin-bottom { margin-bottom:  10rem; }
+.padding-top-bottom  { padding:       6rem 0; }
+.small-padding-top-bottom { padding:  3rem 0; }
+.internal-padding    { padding:         2rem; }
+.thin-inter-padding  { padding:       0 1rem; }
+/* Text classes */
+.color-inherit, .color-inherit:hover, .color-inherit:focus { color: inherit; }
+.no-decoration, .no-decoration:hover, .no-decoration:focus { text-decoration: none; }
+.text-upper { text-transform: uppercase;  }
+.font-light { font-weight: 300; }
+.font-larger { font-size: 18px; }
+.text-muted { color: #989898; }
+
+/* homepage styles */
+  /* slider */
+  div.slider-wrapper img {
+      max-height: 70vh;
+      object-fit: cover;
+  }
+  .carousel-inner {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+  }
+  .carousel-caption {
+      top: auto !important;
+      bottom: 120px;
+      padding: 0;
+      font-size: 1em;
+      text-shadow: none;
+      right: 0% !important;
+      left: 0% !important;
+  }
+  .carousel-caption p {
+      color: white;
+      text-align: center;
+      margin-top: 10px;
+      opacity: 1;
+  }
+  #black-bar {
+    height: 3.5em;
+    opacity: 0.75;
+    background: black;
+    position: fixed;
+    bottom: 120px;
+    left: 0px;
+    width: 100%;
+  }
+  .white-transparent-fade {
+    height: 150px;
+    background: white; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); /* Standard syntax (must be last) */
+    position:relative;
+    top:-150px;
+  }
+
+
+  /* Content */
+  .entry-header-child {
+      text-align: center;
+      margin-top: 1em;
+  }
+  header.entry-header-child span.entry-title-child {
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 300;
+    top: 104px;
+    left: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #0b664e;
+  }
+	@media only screen and (max-width: 2000px) and (min-width: 991px) {	
+		header.entry-header-child span.entry-title-child {
+			font-size: 4em;
+			line-height: 2em;
+		  }
+		}
+  h2.homepage-h2 {
+    font-size: 2.25em;
+    color: black;
+    font-weight: 300 !important;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+  /* Our Work */
+  .fancy, .fancy2 {
+  overflow: hidden;
+  text-align: center;
+  }
+ .fancy2 span#fancy_show {
+  line-height: 1.2;
+  }
+  .fancy span, .fancy2 span {
+    position: relative;
+  }
+  .fancy span:before,
+  .fancy span:after {
+    $linesHeight: 7px;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    width: 370%;
+    height: $linesHeight;
+    top: 50%;
+    margin-top: floor(-$linesHeight / 2);
+  }
+  .fancy2 span:before,
+  .fancy2 span:after {
+    $linesHeight: 7px;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    width: 240%;
+    height: $linesHeight;
+    top: 50%;
+    margin-top: floor(-$linesHeight / 2);
+  }
+  .fancy span:before, .fancy2 span:before  {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .fancy span:after, .fancy2 span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+   @media only screen and (max-width: 1200px) and (min-width: 991px) {
+	  .fancy span:before, .fancy span:after {	width: 295%;  }
+	  .fancy2 span:before, .fancy2 span:after {	width: 190%;  }
+	}
+   @media only screen and (max-width: 990px) and (min-width: 758px) {
+	  .fancy span:before, .fancy span:after {	width: 215%;  }
+	  .fancy2 span:before, .fancy2 span:after {	width: 130%;  }
+	}
+
+ @media only screen and (max-width: 756px) and (min-width: 701px) {
+	  .fancy span:before, .fancy span:after {	width: 195%;  }
+	  .fancy2 span:before, .fancy2 span:after {	width: 90%;  }
+	}
+ @media only screen and (max-width: 700px) and (min-width: 601px) {
+	  .fancy span:before, .fancy span:after {	width: 150%;  }
+	  .fancy2 span:before, .fancy2 span:after {	width: 90%;  }
+	}
+ @media only screen and (max-width: 600px) and (min-width: 501px) {
+	  .fancy span:before, .fancy span:after {	width: 120%;  }
+	  .fancy2 span:before, .fancy2 span:after {	width: 90%;  }
+	}
+ @media only screen and (max-width: 500px) and (min-width: 301px) {
+	  .fancy span:before, .fancy span:after {	width: 1750%;  }
+	  .fancy2 span:before, .fancy2 span:after {	width: 70%;  }
+	}
+ @media only screen and (max-width: 300px)  {
+	  .fancy span:before, .fancy span:after {	width: 1250%;  }
+	  .fancy2 span:before, .fancy2 span:after {	width: 50%;  }
+	}
+
+  .callout img {
+    width: 100%;
+    height: auto;
+  }
+  .callout-bg-black {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: black;
+    height: 100%;
+    opacity: .4;
+    -webkit-transition: -moz-transform all 0.5s ease;
+      -moz-transition: -moz-transform all 0.5s ease;
+      -ms-transition: -ms-transform all 0.5s ease;
+      -o-transition: -o-transform all 0.5s ease;
+      transition: all 0.5s ease;
+  }
+  .callout-bg-black:hover {
+    opacity: 0;
+  }
+  .callout-bg {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: white;
+  }
+  .callout-bg h6.callout-title {
+    color:white;
+    font-size: 2rem;
+  }
+
+  /* Testimonials */
+  div#carousel-slider-wrapper2 {
+    height: 300px;
+    overflow: visible;
+  }
+  .background-green {
+    background-color: #0b664e;
+    max-height: 450px;
+    height: 100%;
+  }
+  .carousel-caption2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin: 1em 0;
+    font-weight: 200;
+  }
+  .company_logo img {
+    max-width: 75px;
+    width:100%;
+    max-height: 75px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+  }
+  p.author-name {
+    color:white;
+    font-size:1.25em;
+    margin-bottom:0;
+  }
+  p.author-title {
+    color:white;
+    font-size:1.25em;
+    font-weight:200;
+  }
+
+  div#carousel-slider-wrapper2 .carousel-control.left, div#carousel-slider-wrapper2 .carousel-control.right {
+    background: transparent;
+
+  }
+  div#carousel-slider-wrapper2 .glyphicon-chevron-right, div#carousel-slider-wrapper2 .glyphicon-chevron-left {
+    display: block;
+  }
+  div#carousel-slider-wrapper2 .carousel-control:focus, div#carousel-slider-wrapper2 .carousel-control:hover {
+      color: #fff;
+      text-decoration: none;
+      filter: alpha(opacity=90);
+      outline: 0;
+      opacity: .9;
+  }
+
+  .glyphicon-chevron-left:before, .glyphicon-chevron-right:before {
+    background: transparent!important;
+  }
+
+  /* The Messenger Styles */
+  #our_links div.featured-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+  .link-content {
+    width: 100%;
+    max-width: 350px;
+    margin: 1em auto;
+  }
+
+  /** Footer **/
+  footer .image-logo-mbm {
+    max-width: 135px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  footer#child-footer-wrapper {
+    background: #000;
+    color: #fff;
+    text-align: center;
+  }
+  .footer_menu ul {
+    border-left: 1px #fff solid;
+    border-right: 1px #fff solid;
+  }
+  .footer_menu ul a {
+    color: #fff;
+  }
+  footer .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/** NAV FIX **/
+#megaMenu.megaMenuHorizontal ul.megaMenu {
+    width: auto !important;
+}
+
+
+/* Importing Contractor theme styles */
+@import url("../contractor/css/animate.css");
+@import url("../contractor/css/bios.css");
+@import url("../contractor/css/bootstrap-theme.min.css");
+@import url("../contractor/css/bootstrap.min.css");
+@import url("../contractor/css/bt_style.css");
+@import url("../contractor/css/fixes.css");
+@import url("../contractor/css/font-awesome.css");
+@import url("../contractor/css/font-awesome.min.css");
+@import url("../contractor/css/geometeric.css");
+@import url("../contractor/css/inside-style.css");
+@import url("../contractor/css/layout.css");
+@import url("../contractor/css/proximanova.css");
+@import url("../contractor/css/template.css");
+
+@import url("../contractor/style.css");
