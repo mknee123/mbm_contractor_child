@@ -92,7 +92,7 @@ get_header(); ?>
 					<?php get_template_part( 'templates/home', 'page' ); ?>
 
 				<?php endwhile; // end of the loop. ?>
-				
+
 			</div>
 		</div>
 <!-- Testimonials -->
@@ -113,64 +113,48 @@ get_header(); ?>
 						while ( $slider->have_posts() ) : $slider->the_post();
 							echo	"<div class='item active bg-green' style='background: #0b664e;'>\n";
 							echo		"<div class='container text-center'>\n";
-							//echo			"<div class='carousel-caption'>\n";
-							//echo				"<h1>" . get_the_title() . "</h1>\n";
 							echo			"<div class='carousel-caption2'>\n";
-							echo 			the_content();
+							echo 				the_content();
 							echo 			"</div>\n";
-							//echo			"</div>\n";
 							echo			"<div class='company_logo'><a class=''";
 												if (esc_html(get_post_meta(get_the_ID(), '_cmb2_testimonials_link', true)) != '')
 												echo " href='" . esc_html(get_post_meta(get_the_ID(), '_cmb2_testimonials_link', true)) . "'";
 							echo    ">\n";
-							echo		the_post_thumbnail();
+							echo			the_post_thumbnail();
 							echo    "</a>\n";
 							echo		"</div>\n";
 							echo '<p class="author-name thin-margin-top">' . esc_html(get_post_meta(get_the_ID(), '_cmb2_testimony_author', true)) . '</p>';
 							echo '<p class="author-title"><em>' . esc_html(get_post_meta(get_the_ID(), '_cmb2_testimony_author_title', true)) . '</em></p>';
 							echo    "</div>\n";
-
-							echo    "<a class='left carousel-control' href='#carouselSlider2' role='button' data-slide='prev'>\n";
-							echo        "<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>\n";
-							echo 					"<span class='sr-only'>Previous</span>\n";
-							echo    "</a>\n";
-							echo    "<a class='right carousel-control' href='#carouselSlider2' role='button' data-slide='next'>\n";
-							echo        "<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>\n";
-							echo 				"<span class='sr-only'>Next</span>\n";
-							echo    "</a>\n";
-
 							echo    "</div>\n";
-							//$first_post_ID = array(get_the_ID());
+							$first_post_ID = array(get_the_ID());
 						endwhile;
 						wp_reset_postdata();
 							$slider= new WP_Query(array(
 									'post_type'      => 'testimony',
 									'order_by'       => 'rand',
-									'posts_per_page' => 5,
-									'offset'         => 1
+									'posts_per_page' => -1,
+									'post__not_in'   => $first_post_ID
 							));
 							while ( $slider->have_posts() ) : $slider->the_post();
 								 echo	"<div class='item bg-green' style='background: #0b664e;'>\n";
 									echo		"<div class='container text-center'>\n";
-									//echo			"<div class='carousel-caption'>\n";
-									//echo				"<h1>" . get_the_title() . "</h1>\n";
 									echo			"<div class='carousel-caption2'>\n";
 									echo 				the_content();
 									echo 			"</div>\n";
-									//echo			"</div>\n";
 									echo	"<div class='company_logo'><a class=''";
 												if (esc_html(get_post_meta(get_the_ID(), '_cmb2_testimonials_link', true)) != '')
 									echo " href='" . esc_html(get_post_meta(get_the_ID(), '_cmb2_testimonials_link', true)) . "'";
-
 									echo    ">\n";
 									echo		the_post_thumbnail();
 									echo    "</a>\n";
-									echo '<p class="author-name thin-margin-top">' . esc_html(get_post_meta(get_the_ID(), '_cmb2_testimony_author', true)) . '</p>';
-									echo '<p class="author-title"><em>' . esc_html(get_post_meta(get_the_ID(), '_cmb2_testimony_author_title', true)) . '</em></p>';
+									echo		"</div>\n";
+									echo 		'<p class="author-name thin-margin-top">' . esc_html(get_post_meta(get_the_ID(), '_cmb2_testimony_author', true)) . '</p>';
+									echo 		'<p class="author-title"><em>' . esc_html(get_post_meta(get_the_ID(), '_cmb2_testimony_author_title', true)) . '</em></p>';
 									echo		"</div>\n";
 									echo		"</div>\n";
 							endwhile;
-							//echo    "</div>\n";
+							echo    "</div>\n";
 							echo    "<a class='left carousel-control' href='#carouselSlider2' role='button' data-slide='prev'>\n";
 							echo        "<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>\n";
 							echo 					"<span class='sr-only'>Previous</span>\n";
@@ -184,16 +168,11 @@ get_header(); ?>
 					}
 					wp_reset_postdata();
 				?>
+			</div><!--close of slider-wrapper2 -->
+		</div><!--close of row for slider2 -->
+</div><!--close of container fluid -->
 
-			</div>
-		</div>
-	<!-- leaving in case we use a mobile image instead of rotator
-		<div class="mobile-image page-image featured-image hidden">
-		<
-	-->
-</div><!--close of carousel container -->
-</div>
-</div>
+
 <!-- The Messenger -->
 <div id="our_links" class="container">
 			<div class="row margin-bottom margin-top">
@@ -232,8 +211,8 @@ get_header(); ?>
 </div><!--close of the Messenger -->
 
 <div class="margin-top large-margin-bottom text-center">
-	<!-- BEGIN: Constant Contact Email List Form Button --><div align="center"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=g94wgzsab&amp;p=oi&amp;m=1119684886342&amp;sit=lu4gbdljb&amp;f=e3e0b94f-7580-4c53-b67c-6c7f6d38f730" class="button" style="background-color: rgb(11, 102, 78); border: 0px solid rgb(91, 91, 91); color: rgb(255, 255, 225); display: inline-block; padding: 8px 10px; text-shadow: none; border-radius: 0px;">Subscribe to the MBM Newsletter</a></div>
-</div>	
+	<!-- BEGIN: Constant Contact Email List Form Button --><div align="center"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=g94wgzsab&amp;p=oi&amp;m=1119684886342&amp;sit=lu4gbdljb&amp;f=e3e0b94f-7580-4c53-b67c-6c7f6d38f730" class="button" style="background-color: rgb(11, 102, 78); border: 0px solid rgb(91, 91, 91); color: rgb(255, 255, 255); display: inline-block; padding: 8px 10px; text-shadow: none; border-radius: 0px; font-size:1.2rem;">Subscribe to the MBM Newsletter</a></div>
+</div>
 
 <!--End of bootstrap slider -->
 <?php get_footer(); ?>
