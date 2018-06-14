@@ -78,10 +78,11 @@ body {overflow-x:hidden;}
   }
   .white-transparent-fade {
     height: 150px;
-    background: white; /* For browsers that do not support gradients */
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); /* Standard syntax (must be last) */
+    background: white; 
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); 
     position:relative;
     top:-150px;
+	/*background-image: url("images/BannerFade.png");*/
   }
    @media only screen and (max-width: 500px) {
      .white-transparent-fade {
@@ -227,7 +228,7 @@ body {overflow-x:hidden;}
 
   /* Testimonials */
   div#carousel-slider-wrapper2 {
-    height: 300px;
+    height: 320px;
     overflow: visible;
   }
   .background-green {
@@ -242,13 +243,30 @@ body {overflow-x:hidden;}
     margin: 1em 0;
     font-weight: 200;
   }
+
+	@media only screen and (max-width: 690px) and (min-width: 321px) {
+		.carousel-caption2 {		
+			font-size: 1.1em;		
+		  }
+	}
+	@media only screen and (max-width: 320px) {
+		.carousel-caption2 {		
+			font-size: 1em;		
+		  }
+	}
+	.company_logo {
+		display: flex;
+		justify-content: center;
+		height: 100px;
+		align-items: flex-end;
+	}
   .company_logo img {
     max-width: 75px;
     width:100%;
     max-height: 75px;
     border-radius: 50%;
     margin: 0 auto;
-    display: flex;
+   /* display: flex;*/
   }
   p.author-name {
     color:white;

@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 </style>
-<g id="Layer_1">
+<g id="Layer_1_1_">
 </g>
-<g id="Icons">
-	<g>
-		<path class="st0" d="M150,294C70.6,294,6,229.4,6,150S70.6,6,150,6c79.4,0,144,64.6,144,144S229.4,294,150,294z M150,13
-			C74.4,13,13,74.5,13,150s61.4,137,137,137c75.5,0,137-61.4,137-137S225.5,13,150,13z"/>
-		<path class="st0" d="M119.5,128.6h13.1v-12.7c0-5.6,0.1-14.2,4.2-19.6c4.3-5.7,10.2-9.5,20.3-9.5c16.5,0,23.4,2.4,23.4,2.4
-			l-3.3,19.4c0,0-5.4-1.6-10.5-1.6c-5.1,0-9.6,1.8-9.6,6.9v14.8h20.8l-1.5,18.9H157v65.7h-24.5v-65.7h-13.1V128.6z"/>
-	</g>
-</g>
+<path class="st0" d="M44.5,53.5h13.1V40.9c0-5.6,0.1-14.2,4.2-19.6c4.3-5.7,10.2-9.5,20.3-9.5c16.5,0,23.4,2.4,23.4,2.4l-3.3,19.4
+	c0,0-5.4-1.6-10.5-1.6s-9.6,1.8-9.6,6.9v14.8h20.8l-1.5,18.9H82.1v65.7H57.5V72.6H44.5L44.5,53.5L44.5,53.5z"/>
 </svg>
