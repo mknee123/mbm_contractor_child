@@ -81,7 +81,7 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="white-transparent-fade"></div>
+<!--<div class="white-transparent-fade"></div>-->
 
 <!--End of bootstrap slider -->
 <!-- front page content using template -> home-page.php -->
