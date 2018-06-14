@@ -98,7 +98,8 @@ get_header(); ?>
 <!-- Testimonials -->
 <div class="container-fluid carousel-container testimony-slides background-green">
 		<div class="row medium-margin-top medium-margin-bottom">
-			<div class="slider-wrapper2" id="carousel-slider-wrapper2">
+			<div class="slider-wrapper text-center" id="carousel-slider-wrapper2">
+				<img src="/wp-content/themes/contractor-child/images/QuoteMarks.png" alt="quotes" />
 				<?php
 					$slider = new WP_Query(array(
 							'post_type'      => 'testimony',
