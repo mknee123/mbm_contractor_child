@@ -112,7 +112,7 @@ get_header(); ?>
 						echo "<div id='carouselSlider2' class='carousel slide carousel-fade' data-ride='carousel'>\n";
 						echo 	"<div class='carousel-inner' role='listbox'>\n";
 						while ( $slider->have_posts() ) : $slider->the_post();
-							echo	"<div class='item active bg-green' style='background: #0b664e;'>\n";
+							echo	"<div class='item active' >\n";
 							echo		"<div class='container text-center'>\n";
 							echo			"<div class='carousel-caption2'>\n";
 							echo 				the_content();
@@ -138,7 +138,7 @@ get_header(); ?>
 									'post__not_in'   => $first_post_ID
 							));
 							while ( $slider->have_posts() ) : $slider->the_post();
-								 echo	"<div class='item bg-green' style='background: #0b664e;'>\n";
+								 echo	"<div class='item'>\n";
 									echo		"<div class='container text-center'>\n";
 									echo			"<div class='carousel-caption2'>\n";
 									echo 				the_content();

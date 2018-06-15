@@ -43,6 +43,18 @@ body {overflow-x:hidden;}
 
 /* homepage styles */
   /* slider */
+#carouselSlider .item:nth-child(1) {
+    background:  transparent;
+}
+#carouselSlider .item:nth-child(2) 
+{
+    background: transparent;
+}
+
+#carouselSlider .item:nth-child(3) 
+{
+    background: transparent;
+}
   div.slider-wrapper img {
       max-height: 70vh;
       object-fit: cover;
@@ -231,8 +243,26 @@ body {overflow-x:hidden;}
     height: 320px;
     overflow: visible;
   }
+  div#carousel-slider-wrapper2	.item:nth-child(1) 
+	{
+		background:  transparent;
+	}
+
+div#carousel-slider-wrapper2  .item:nth-child(2) 
+	{
+		 background:  transparent; 
+	}
+
+	div#carousel-slider-wrapper2 .item:nth-child(3) 
+	{
+		background: transparent;
+	}
   .background-green {
-    background-color: #0b664e;
+    /*background-color: #0b664e;*/
+	background-image: url("images/QuotesBG.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
     max-height: 450px;
     height: 100%;
   }
