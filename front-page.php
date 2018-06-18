@@ -88,7 +88,7 @@ get_header(); ?>
 
 <!--End of bootstrap slider -->
 <!-- front page content using template -> home-page.php -->
-		<div class="container">
+		<div class="container" id="about">
 			<div class="large-margin-bottom">
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -217,34 +217,21 @@ get_header(); ?>
 <div class="margin-top large-margin-bottom text-center">
 	<!-- BEGIN: Constant Contact Email List Form Button --><div align="center"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=g94wgzsab&amp;p=oi&amp;m=1119684886342&amp;sit=lu4gbdljb&amp;f=e3e0b94f-7580-4c53-b67c-6c7f6d38f730" class="button" style="background-color: rgb(11, 102, 78); border: 0px solid rgb(91, 91, 91); color: rgb(255, 255, 255); display: inline-block; padding: 8px 10px; text-shadow: none; border-radius: 0px; font-size:1.2rem;">Subscribe to the MBM Newsletter</a></div>
 </div>
-
-<(function($) {
-  "use strict"; // Start of use strict
-
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 54
-  });
-
-})(jQuery); // End of use strict!--End of bootstrap slider -->
+<script>
+var headerHeight = $("navbar").height();
+        $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash,
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top -90
+        }, 1200, 'swing', function () {
+            window.location.hash = target ;
+        });
+    });
+});
+	
+</script>	
+<!--End of bootstrap slider -->
 <?php get_footer(); ?>
