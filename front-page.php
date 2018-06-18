@@ -11,76 +11,79 @@ get_header(); ?>
 <div id="home-content">
 
   <!--new homepage rotator using bootstrap-->
-  <div class="container-fluid">
-	<div class="row">
-		<div class="slider-wrapper parallax-slider" id="carousel-slider-wrapper">
-			<?php
-				$slider = new WP_Query(array(
-				    'post_type'      => 'slider',
-				    'order_by'       => 'rand',
-				    'posts_per_page' => 1
-				));
-				if($slider->have_posts()) {
-				    // https://getbootstrap.com/examples/carousel/
-					echo "<div id='carouselSlider' class='carousel slide' data-ride='carousel' data-interval='3000'>\n";
-					echo 	"<div class='carousel-inner' role='listbox'>\n";
-					while ( $slider->have_posts() ) : $slider->the_post();
-						echo	"<a class='item active'";
-						if (esc_html(get_post_meta(get_the_ID(), '_cmb2_slider_link', true)) != '')
-							echo " href='" . esc_html(get_post_meta(get_the_ID(), '_cmb2_slider_link', true)) . "'";
+	<div class="container-fluid">
+		<div class="row">
+			<div class="slider-wrapper parallax-slider" id="carousel-slider-wrapper">
+				<?php
+					$slider = new WP_Query(array(
+						'post_type'      => 'slider',
+						'order_by'       => 'rand',
+						'posts_per_page' => 1
+					));
+					if($slider->have_posts()) {
+						// https://getbootstrap.com/examples/carousel/
+						echo "<div id='carouselSlider' class='carousel slide' data-ride='carousel' data-interval='3000'>\n";
+						echo 	"<div class='carousel-inner' role='listbox'>\n";
+						while ( $slider->have_posts() ) : $slider->the_post();
+							echo	"<a class='item active'";
+							if (esc_html(get_post_meta(get_the_ID(), '_cmb2_slider_link', true)) != '')
+								echo " href='" . esc_html(get_post_meta(get_the_ID(), '_cmb2_slider_link', true)) . "'";
 
-						echo    ">\n";
-						echo		the_post_thumbnail();
-						echo		"<div class='container'>\n";
-						//display only if content is filled
-						$thecontent = get_the_content();
-							if(!empty($thecontent)) {
+							echo    ">\n";
+							echo		the_post_thumbnail();
+							echo		"<div class='container'>\n";
+							//display only if content is filled
+							$thecontent = get_the_content();
+								if(!empty($thecontent)) {
 
-						echo			"<div class='carousel-caption'>\n";
-						//echo				"<h1>" . get_the_title() . "</h1>\n";
-						echo				the_content();
-						echo			"</div>\n";
-						echo 		"<div id='black-bar'></div>\n";
-						}
-						echo		"</div>\n";
-				    echo    "</a>\n";
-					endwhile;
-				    wp_reset_postdata();
-				    $slider = new WP_Query(array(
-				        'post_type'      => 'slider',
-				        'order_by'       => 'rand',
-				        'posts_per_page' => 5,
-				        'offset'         => 1
-				    ));
-				    while ( $slider->have_posts() ) : $slider->the_post();
-				        echo	"<a class='item'";
-						if (esc_html(get_post_meta(get_the_ID(), '_cmb2_slider_link', true)) != '')
-							echo " href='" . esc_html(get_post_meta(get_the_ID(), '_cmb2_slider_link', true)) . "'";
-
-						echo    ">\n";
-				        echo		the_post_thumbnail();
-				        echo		"<div class='container'>\n";
-								$thecontent = get_the_content();
-									if(!empty($thecontent)) {
-				        echo			"<div class='carousel-caption'>\n";
-				        //echo				"<h1>" . get_the_title() . "</h1>\n";
-				        echo				the_content();
-				        echo			"</div>\n";
-								echo 		"<div id='black-bar'></div>\n";
+							echo			"<div class='carousel-caption'>\n";
+							//echo				"<h1>" . get_the_title() . "</h1>\n";
+							echo				the_content();
+							echo			"</div>\n";
+							echo 		"<div id='black-bar'></div>\n";
 							}
-				        echo		"</div>\n";
-				        echo    "</a>\n";
-				    endwhile;
-				    echo    "</div>\n";
-				    echo "</div>\n";
-				}
-				wp_reset_postdata();
-			?>
+							echo		"</div>\n";
+						echo    "</a>\n";
+						endwhile;
+						wp_reset_postdata();
+						$slider = new WP_Query(array(
+							'post_type'      => 'slider',
+							'order_by'       => 'rand',
+							'posts_per_page' => 5,
+							'offset'         => 1
+						));
+						while ( $slider->have_posts() ) : $slider->the_post();
+							echo	"<a class='item'";
+							if (esc_html(get_post_meta(get_the_ID(), '_cmb2_slider_link', true)) != '')
+								echo " href='" . esc_html(get_post_meta(get_the_ID(), '_cmb2_slider_link', true)) . "'";
 
+							echo    ">\n";
+							echo		the_post_thumbnail();
+							echo		"<div class='container'>\n";
+									$thecontent = get_the_content();
+										if(!empty($thecontent)) {
+							echo			"<div class='carousel-caption'>\n";
+							//echo				"<h1>" . get_the_title() . "</h1>\n";
+							echo				the_content();
+							echo			"</div>\n";
+									echo 		"<div id='black-bar'></div>\n";
+								}
+							echo		"</div>\n";
+							echo    "</a>\n";
+						endwhile;
+						echo    "</div>\n";
+						echo "</div>\n";
+					}
+					wp_reset_postdata();
+				?>
+
+			</div>
 		</div>
 	</div>
-</div>
+<div class="container-fluid" id="scrollDown">
+	<a href="#about" class="js-scroll-trigger"><p class="animated infinite pulse"><i class="down"></i></p></a>
 
+</div>
 <!--<div class="white-transparent-fade"></div>-->
 
 <!--End of bootstrap slider -->
@@ -215,5 +218,33 @@ get_header(); ?>
 	<!-- BEGIN: Constant Contact Email List Form Button --><div align="center"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=g94wgzsab&amp;p=oi&amp;m=1119684886342&amp;sit=lu4gbdljb&amp;f=e3e0b94f-7580-4c53-b67c-6c7f6d38f730" class="button" style="background-color: rgb(11, 102, 78); border: 0px solid rgb(91, 91, 91); color: rgb(255, 255, 255); display: inline-block; padding: 8px 10px; text-shadow: none; border-radius: 0px; font-size:1.2rem;">Subscribe to the MBM Newsletter</a></div>
 </div>
 
-<!--End of bootstrap slider -->
+<(function($) {
+  "use strict"; // Start of use strict
+
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 54)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
+
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 54
+  });
+
+})(jQuery); // End of use strict!--End of bootstrap slider -->
 <?php get_footer(); ?>

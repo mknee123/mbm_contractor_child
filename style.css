@@ -66,12 +66,17 @@ body {overflow-x:hidden;}
   }
   .carousel-caption {
       top: auto !important;
-      bottom: 120px;
+      bottom: 10px;
       padding: 0;
       font-size: 1em;
       text-shadow: none;
       right: 0% !important;
       left: 0% !important;
+	  -webkit-transition: -moz-transform all 0.5s ease;
+      -moz-transition: -moz-transform all 0.5s ease;
+      -ms-transition: -ms-transform all 0.5s ease;
+      -o-transition: -o-transform all 0.5s ease;
+      transition: all 0.5s ease;
   }
   .carousel-caption p {
       color: white;
@@ -80,13 +85,18 @@ body {overflow-x:hidden;}
       opacity: 1;
   }
   #black-bar {
-    height: 3.5em;
+    height: 2.25em;
     opacity: 0.75;
     background: black;
     position: fixed;
-    bottom: 120px;
+    bottom: 12px;
     left: 0px;
     width: 100%;
+	  -webkit-transition: -moz-transform all 0.5s ease;
+      -moz-transition: -moz-transform all 0.5s ease;
+      -ms-transition: -ms-transform all 0.5s ease;
+      -o-transition: -o-transform all 0.5s ease;
+      transition: all 0.5s ease;
   }
   .white-transparent-fade {
     height: 150px;
@@ -96,12 +106,70 @@ body {overflow-x:hidden;}
     top:-150px;
 	/*background-image: url("images/BannerFade.png");*/
   }
+  @media only screen and (max-width: 2000px) and (min-width: 991px) {
+	  .carousel-caption {
+		  bottom: 120px;	 
+	  }
+
+	  #black-bar {
+		  height: 3.5em;  
+		  bottom: 120px;	
+	  }
+	 
+	}
+  @media only screen and (max-width: 990px) and (min-width: 691px) {
+	  .carousel-caption {
+		  bottom: 48px;	 
+	  }
+
+	  #black-bar {
+		  height: 3em;  
+		  bottom: 50px;	
+	  }
+	 
+	}
+  @media only screen and (max-width: 690px) and (min-width: 481px) {
+	  .carousel-caption {
+		  bottom: 48px;	 
+	  }
+
+	  #black-bar {
+		  height: 3em;  
+		  bottom: 50px;	
+	  }
+	 
+	}
+
    @media only screen and (max-width: 500px) {
      .white-transparent-fade {
        height: 70px;
        top:-70px;
      }
    }
+/*SCROLL DOWN ICON*/
+	#scrollDown {
+		visibility: hidden;
+	}
+
+	@media only screen and (max-width: 2000px) and (min-width: 991px) {
+		#scrollDown {
+			position: relative;
+			bottom: 80px;
+			height: 10px;
+			text-align: center;
+			visibility: visible;
+		}
+		.down {
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+		}
+		i {
+			border: solid lightgrey;
+			border-width: 0 5px 5px 0;
+			display: inline-block;
+			padding: 18px;
+		}
+	}
 
   /* Content */
   #post-62 .entry-content {
