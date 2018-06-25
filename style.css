@@ -106,34 +106,61 @@ body {overflow-x:hidden;}
     top:-150px;
 	/*background-image: url("images/BannerFade.png");*/
   }
+
+  div#carousel-slider-wrapper .carousel-control.left, div#carousel-slider-wrapper .carousel-control.right {
+    background: transparent;
+
+  }
+  div#carousel-slider-wrapper .glyphicon-chevron-right, div#carousel-slider-wrapper .glyphicon-chevron-left {
+    display: block;
+    font-size: 16px;
+  }
+  div#carousel-slider-wrapper .carousel-control:focus, div#carousel-slider-wrapper .carousel-control:hover {
+      color: #fff;
+      text-decoration: none;
+      filter: alpha(opacity=90);
+      outline: 0;
+      opacity: .9;
+  }
+  div#carousel-slider-wrapper .carousel-control .glyphicon-chevron-left, div#carousel-slider-wrapper .carousel-control .icon-prev, div#carousel-slider-wrapper .carousel-control .glyphicon-chevron-right, div#carousel-slider-wrapper .carousel-control .icon-next {
+    top: auto;
+    bottom: 102px;
+}
+
+  .glyphicon-chevron-left:before, .glyphicon-chevron-right:before {
+    background: transparent!important;
+  }
+
   /* slider indicators */
   .carousel-indicators {
     bottom: 30px !important;
   }
   .carousel-indicators li {
     border: 2px solid #fff !important;
-    border-radius: 0 !important;
+    opacity: .75;
+    /*border-radius: 0 !important;*/
   }
   .carousel-indicators .active {
-    background-color: #aa2131 !important;
-    border-radius: 0 !important;
+    background-color: #00674e !important;
+    /*border-radius: 0 !important;*/
   }
   .carousel-indicators .active, .carousel-indicators li {
-
     width: 15px !important;
     height: 15px !important;
     margin: 1px 3px !important;
-    opacity: .75;
+    opacity: .55;
+  }
 
-}
+
+
   @media only screen and (max-width: 2000px) and (min-width: 991px) {
 	  .carousel-caption {
-		  bottom: 120px;
+		  bottom: 100px;
 	  }
 
 	  #black-bar {
 		  height: 3.5em;
-		  bottom: 120px;
+		  bottom: 100px;
 	  }
 
 	}
@@ -174,7 +201,7 @@ body {overflow-x:hidden;}
 	@media only screen and (max-width: 2000px) and (min-width: 991px) {
 		#scrollDown {
 			position: relative;
-			bottom: 80px;
+			bottom: -10px;
 			height: 10px;
 			text-align: center;
 			visibility: visible;
@@ -435,7 +462,7 @@ div#carousel-slider-wrapper2  .item:nth-child(2)
     margin: 0 auto;
   }
   footer#child-footer-wrapper {
-    background: #000;
+    background: rgb(59, 58, 55);
     color: #fff;
     text-align: center;
   }

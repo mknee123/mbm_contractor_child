@@ -33,7 +33,7 @@
 							<li class="item-109"><a href="/our-work" >Our Work</a></li>
 							<li class="item-110"><a href="/services-article" >Services</a></li>
 							<li class="item-111"><a href="/about-mbm-article" >About MBM</a></li>
-							<li class="item-112"><a href="/contact-mbm-contracting-article" >Contact Us</a></li>
+							<li class="item-112"><a href="/contact-mbm-contracting-article">Contact Us</a></li>
 						</ul>
 					</div>
 				</div>

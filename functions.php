@@ -11,11 +11,8 @@ add_action( 'after_setup_theme' , 'contractor_child_setup' );
 function theme_enqueue_scripts() {
 	wp_deregister_script('jquery');   // We do this so we can enqueue a more recent version
 	wp_enqueue_script('jquery', ('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'), '', '', false);
-  wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/includes/main.js', array(), true );
+  wp_enqueue_script('main', get_stylesheet_directory_uri() . '/includes/main.js', array(), '1.0.0', true );
 }
-
-
-
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 // Add theme support for featured images
 add_theme_support('post-thumbnails');
