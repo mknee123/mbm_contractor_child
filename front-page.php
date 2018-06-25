@@ -22,7 +22,7 @@ get_header(); ?>
 					));
 					if($slider->have_posts()) {
 						// https://getbootstrap.com/examples/carousel/
-						echo "<div id='carouselSlider' class='carousel slide' data-ride='carousel' data-interval='3000'>\n";
+						echo "<div id='carouselSlider' class='carousel slide' data-ride='carousel' data-interval='6000'>\n";
 						echo 	"<div class='carousel-inner' role='listbox'>\n";
 						while ( $slider->have_posts() ) : $slider->the_post();
 							echo	"<a class='item active'";
@@ -88,7 +88,8 @@ get_header(); ?>
 
 <!--End of bootstrap slider -->
 <!-- front page content using template -> home-page.php -->
-		<div class="container" id="about">
+<span id="about"></span>
+		<div class="container">
 			<div class="large-margin-bottom">
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -215,7 +216,7 @@ get_header(); ?>
 </div><!--close of the Messenger -->
 
 <div class="margin-top large-margin-bottom text-center">
-	<!-- BEGIN: Constant Contact Email List Form Button --><div align="center"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=g94wgzsab&amp;p=oi&amp;m=1119684886342&amp;sit=lu4gbdljb&amp;f=e3e0b94f-7580-4c53-b67c-6c7f6d38f730" class="button" style="background-color: rgb(11, 102, 78); border: 0px solid rgb(91, 91, 91); color: rgb(255, 255, 255); display: inline-block; padding: 8px 10px; text-shadow: none; border-radius: 0px; font-size:1.2rem;">Subscribe to the MBM Newsletter</a></div>
+	<!-- BEGIN: Constant Contact Email List Form Button --><div align="center"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=g94wgzsab&amp;p=oi&amp;m=1119684886342&amp;sit=lu4gbdljb&amp;f=e3e0b94f-7580-4c53-b67c-6c7f6d38f730" class="button" style="background-color: rgb(11, 102, 78); border: 0px solid rgb(91, 91, 91); color: rgb(255, 255, 255); display: inline-block; padding: 8px 10px; text-shadow: none; border-radius: 0px; font-size:1.75rem;">Subscribe to the MBM Newsletter</a></div>
 </div>
 <script>
 var headerHeight = $("navbar").height();
@@ -231,7 +232,7 @@ var headerHeight = $("navbar").height();
         });
     });
 });
-	
-</script>	
+
+</script>
 <!--End of bootstrap slider -->
 <?php get_footer(); ?>

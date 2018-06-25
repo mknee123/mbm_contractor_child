@@ -46,12 +46,12 @@ body {overflow-x:hidden;}
 #carouselSlider .item:nth-child(1) {
     background:  transparent;
 }
-#carouselSlider .item:nth-child(2) 
+#carouselSlider .item:nth-child(2)
 {
     background: transparent;
 }
 
-#carouselSlider .item:nth-child(3) 
+#carouselSlider .item:nth-child(3)
 {
     background: transparent;
 }
@@ -86,7 +86,7 @@ body {overflow-x:hidden;}
   }
   #black-bar {
     height: 2.25em;
-    opacity: 0.75;
+    opacity: 0.5;
     background: black;
     position: fixed;
     bottom: 12px;
@@ -100,44 +100,64 @@ body {overflow-x:hidden;}
   }
   .white-transparent-fade {
     height: 150px;
-    background: white; 
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); 
+    background: white;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
     position:relative;
     top:-150px;
 	/*background-image: url("images/BannerFade.png");*/
   }
+  /* slider indicators */
+  .carousel-indicators {
+    bottom: 30px !important;
+  }
+  .carousel-indicators li {
+    border: 2px solid #fff !important;
+    border-radius: 0 !important;
+  }
+  .carousel-indicators .active {
+    background-color: #aa2131 !important;
+    border-radius: 0 !important;
+  }
+  .carousel-indicators .active, .carousel-indicators li {
+
+    width: 15px !important;
+    height: 15px !important;
+    margin: 1px 3px !important;
+    opacity: .75;
+
+}
   @media only screen and (max-width: 2000px) and (min-width: 991px) {
 	  .carousel-caption {
-		  bottom: 120px;	 
+		  bottom: 120px;
 	  }
 
 	  #black-bar {
-		  height: 3.5em;  
-		  bottom: 120px;	
+		  height: 3.5em;
+		  bottom: 120px;
 	  }
-	 
+
 	}
   @media only screen and (max-width: 990px) and (min-width: 691px) {
 	  .carousel-caption {
-		  bottom: 48px;	 
+		  bottom: 48px;
 	  }
 
 	  #black-bar {
-		  height: 3em;  
-		  bottom: 50px;	
+		  height: 3em;
+		  bottom: 50px;
 	  }
-	 
+
 	}
   @media only screen and (max-width: 690px) and (min-width: 481px) {
 	  .carousel-caption {
-		  bottom: 48px;	 
+		  bottom: 48px;
 	  }
 
 	  #black-bar {
-		  height: 3em;  
-		  bottom: 50px;	
+		  height: 3em;
+		  bottom: 50px;
 	  }
-	 
+
 	}
 
    @media only screen and (max-width: 500px) {
@@ -311,17 +331,17 @@ body {overflow-x:hidden;}
     height: 320px;
     overflow: visible;
   }
-  div#carousel-slider-wrapper2	.item:nth-child(1) 
+  div#carousel-slider-wrapper2	.item:nth-child(1)
 	{
 		background:  transparent;
 	}
 
-div#carousel-slider-wrapper2  .item:nth-child(2) 
+div#carousel-slider-wrapper2  .item:nth-child(2)
 	{
-		 background:  transparent; 
+		 background:  transparent;
 	}
 
-	div#carousel-slider-wrapper2 .item:nth-child(3) 
+	div#carousel-slider-wrapper2 .item:nth-child(3)
 	{
 		background: transparent;
 	}
@@ -343,13 +363,13 @@ div#carousel-slider-wrapper2  .item:nth-child(2)
   }
 
 	@media only screen and (max-width: 690px) and (min-width: 321px) {
-		.carousel-caption2 {		
-			font-size: 1.1em;		
+		.carousel-caption2 {
+			font-size: 1.1em;
 		  }
 	}
 	@media only screen and (max-width: 320px) {
-		.carousel-caption2 {		
-			font-size: 1em;		
+		.carousel-caption2 {
+			font-size: 1em;
 		  }
 	}
 	.company_logo {

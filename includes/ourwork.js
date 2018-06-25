@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+
 	// If post is saved, output shortcode box
 	function GetURLParameter(sParam) {
 		var sPageURL = window.location.search.substring(1);
