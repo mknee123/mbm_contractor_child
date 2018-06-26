@@ -7,3 +7,7 @@ myCarousel.find(".carousel-inner").children(".item").each(function(index) {
     indicators.append("<li data-target='#carouselSlider' data-slide-to='"+index+"' class='active'></li>") :
     indicators.append("<li data-target='carouselSlider' data-slide-to='"+index+"'></li>");
 });
+
+jQuery(document).ready(function($) {
+  $('.carousel').carousel()
+});

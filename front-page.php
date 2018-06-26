@@ -22,7 +22,7 @@ get_header(); ?>
 					));
 					if($slider->have_posts()) {
 						// https://getbootstrap.com/examples/carousel/
-						echo "<div id='carouselSlider' class='carousel slide' data-ride='carousel' data-interval='6000'>\n";
+						echo "<div id='carouselSlider' class='carousel slide' data-ride='carousel' data-interval='6000' data-keyboard='true'>\n";
 						echo 	"<div class='carousel-inner' role='listbox'>\n";
 						while ( $slider->have_posts() ) : $slider->the_post();
 							echo	"<a class='item active'";
@@ -97,8 +97,9 @@ get_header(); ?>
 <!-- front page content using template -> home-page.php -->
 
 		<div class="container">
-			<span id="about"></span>
+
 			<div class="medium-margin-top large-margin-bottom">
+					<span id="about"></span>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'templates/home', 'page' ); ?>
