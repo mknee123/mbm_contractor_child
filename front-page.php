@@ -89,8 +89,7 @@ get_header(); ?>
 		</div>
 	</div>
 <div class="container-fluid" id="scrollDown">
-	<a href="#about" class="js-scroll-trigger"><p class="animated infinite pulse"><i class="down"></i></p></a>
-
+	<a href="#about" class="arrow-scroll"><p class="animated infinite pulse"><i class="down"></i></p></a>
 </div>
 <!--<div class="white-transparent-fade"></div>-->
 
@@ -230,19 +229,19 @@ get_header(); ?>
 
 <script>
 
-
-var headerHeight = $("navbar").height();
-        $(document).ready(function(){
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-        var target = this.hash,
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top -90
-        }, 1200, 'swing', function () {
-            window.location.hash = target ;
-        });
-    });
+$(function() {
+  $('.arrow-scroll').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 70
+        }, 500);
+        return false;
+      }
+    }
+  });
 });
 
 </script>
