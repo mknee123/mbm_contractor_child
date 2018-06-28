@@ -22,7 +22,7 @@ get_header(); ?>
 					));
 					if($slider->have_posts()) {
 						// https://getbootstrap.com/examples/carousel/
-						echo "<div id='carouselSlider' class='carousel slide' data-ride='carousel' data-interval='6000' data-keyboard='true'>\n";
+						echo "<div id='carouselSlider' class='carousel slide' data-ride='carousel' data-interval='6000'>\n";
 						echo 	"<div class='carousel-inner' role='listbox'>\n";
 						while ( $slider->have_posts() ) : $slider->the_post();
 							echo	"<a class='item active'";
