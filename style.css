@@ -70,8 +70,10 @@ body {overflow-x:hidden;}
       padding: 0;
       font-size: 1em;
       text-shadow: none;
-      right: 0% !important;
-      left: 0% !important;
+	  text-transform: uppercase;
+	  text-align: left !important;
+      right: 5% !important;
+      left: 5% !important;
 	  -webkit-transition: -moz-transform all 0.5s ease;
       -moz-transition: -moz-transform all 0.5s ease;
       -ms-transition: -ms-transform all 0.5s ease;
@@ -80,7 +82,7 @@ body {overflow-x:hidden;}
   }
   .carousel-caption p {
       color: white;
-      text-align: center;
+      letter-spacing: 1px;
       margin-top: 10px;
       opacity: 1;
   }
@@ -101,19 +103,21 @@ body {overflow-x:hidden;}
   .white-transparent-fade {
     height: 150px;
     background: white;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    background: linear-gradient(to bottom, rgba(000,000,000,0), rgba(000,000,000,.5));
     position:relative;
     top:-150px;
 	/*background-image: url("images/BannerFade.png");*/
   }
-
+   div#carousel-slider-wrapper .carousel-control {
+		width: 10%;
+   }
   div#carousel-slider-wrapper .carousel-control.left, div#carousel-slider-wrapper .carousel-control.right {
     background: transparent;
 
   }
   div#carousel-slider-wrapper .glyphicon-chevron-right, div#carousel-slider-wrapper .glyphicon-chevron-left {
     display: block;
-    font-size: 16px;
+    font-size: 24px;
   }
   div#carousel-slider-wrapper .carousel-control:focus, div#carousel-slider-wrapper .carousel-control:hover {
       color: #fff;
@@ -122,10 +126,10 @@ body {overflow-x:hidden;}
       outline: 0;
       opacity: .9;
   }
-  div#carousel-slider-wrapper .carousel-control .glyphicon-chevron-left, div#carousel-slider-wrapper .carousel-control .icon-prev, div#carousel-slider-wrapper .carousel-control .glyphicon-chevron-right, div#carousel-slider-wrapper .carousel-control .icon-next {
+  /*div#carousel-slider-wrapper .carousel-control .glyphicon-chevron-left, div#carousel-slider-wrapper .carousel-control .icon-prev, div#carousel-slider-wrapper .carousel-control .glyphicon-chevron-right, div#carousel-slider-wrapper .carousel-control .icon-next {
     top: auto;
     bottom: 102px;
-}
+}*/
 
   .glyphicon-chevron-left:before, .glyphicon-chevron-right:before {
     background: transparent!important;
@@ -155,7 +159,7 @@ body {overflow-x:hidden;}
 
   @media only screen and (max-width: 2000px) and (min-width: 991px) {
 	  .carousel-caption {
-		  bottom: 100px;
+		  bottom: 5rem;
 	  }
 
 	  #black-bar {
@@ -166,7 +170,7 @@ body {overflow-x:hidden;}
 	}
   @media only screen and (max-width: 990px) and (min-width: 691px) {
 	  .carousel-caption {
-		  bottom: 48px;
+		  bottom: 3.75rem;
 	  }
 
 	  #black-bar {
@@ -177,7 +181,7 @@ body {overflow-x:hidden;}
 	}
   @media only screen and (max-width: 690px) and (min-width: 481px) {
 	  .carousel-caption {
-		  bottom: 20px;
+		  bottom: 1rem;
 	  }
 
 	  #black-bar {
@@ -239,7 +243,7 @@ body {overflow-x:hidden;}
 	@media only screen and (max-width: 2000px) and (min-width: 991px) {
 		header.entry-header-child span.entry-title-child {
 			font-size: 4em;
-			line-height: 2em;
+			line-height: 1.2em;
 		  }
 		}
   h2.homepage-h2 {

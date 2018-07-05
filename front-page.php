@@ -40,9 +40,10 @@ get_header(); ?>
 							//echo				"<h1>" . get_the_title() . "</h1>\n";
 							echo				the_content();
 							echo			"</div>\n";
-							echo 		"<div id='black-bar'></div>\n";
+							
 							}
 							echo		"</div>\n";
+						
 						echo    "</a>\n";
 						endwhile;
 						wp_reset_postdata();
@@ -66,12 +67,15 @@ get_header(); ?>
 							//echo				"<h1>" . get_the_title() . "</h1>\n";
 							echo				the_content();
 							echo			"</div>\n";
-									echo 		"<div id='black-bar'></div>\n";
+								
 								}
 							echo		"</div>\n";
+						
 							echo    "</a>\n";
+						
 						endwhile;
 						echo    "</div>\n";
+						
 						echo    "<a class='left carousel-control' href='#carouselSlider' role='button' data-slide='prev'>\n";
 						echo        "<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>\n";
 						echo 					"<span class='sr-only'>Previous</span>\n";
@@ -80,18 +84,20 @@ get_header(); ?>
 						echo        "<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>\n";
 						echo 				"<span class='sr-only'>Next</span>\n";
 						echo    "</a>\n";
+						
 						echo "</div>\n";
+						
 					}
 					wp_reset_postdata();
 				?>
-
+			
 			</div>
 		</div>
 	</div>
-<div class="container-fluid" id="scrollDown">
+<div class="container-fluid thin-margin-top thin-margin-bottom" id="scrollDown">
 	<a href="#about" class="arrow-scroll"><p class="animated infinite pulse"><i class="down"></i></p></a>
 </div>
-<!--<div class="white-transparent-fade"></div>-->
+
 
 <!--End of bootstrap slider -->
 <!-- front page content using template -> home-page.php -->
