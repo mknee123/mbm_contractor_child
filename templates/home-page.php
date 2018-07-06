@@ -9,7 +9,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<section class="entry-header-wrapper">
 		<header class="entry-header-child">
-			<span class="entry-title-child text-uppercase">Trusted Partner in <br>
+			<span class="entry-title-child text-uppercase">Trusted Partner in<br>
 				<strong>Building Success</strong></span>
 			<div class="container">
 				<div class="row">
