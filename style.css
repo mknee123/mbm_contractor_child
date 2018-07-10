@@ -9,7 +9,9 @@ Version: 0.1.0
 */
 
 /* special width styles */
-body {overflow-x:hidden;}
+body {
+  overflow-x:hidden;
+}
 .width-50 {
   max-width: 50%;
   margin: 0 auto;
@@ -466,13 +468,19 @@ div#carousel-slider-wrapper2  .item:nth-child(2)
     margin: 0 auto;
   }
   footer#child-footer-wrapper {
-    background: rgb(59, 58, 55);
+    background: rgb(0, 103, 78);
     color: #fff;
     text-align: center;
   }
   .footer_menu ul {
     border-left: 1px #fff solid;
     border-right: 1px #fff solid;
+  }
+  @media only screen and (max-width: 762px) {
+    .footer_menu ul {
+      border-left: none;
+      border-right: none;
+    }
   }
   .footer_menu ul a {
     color: #fff;

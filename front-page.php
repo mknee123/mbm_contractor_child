@@ -40,10 +40,10 @@ get_header(); ?>
 							//echo				"<h1>" . get_the_title() . "</h1>\n";
 							echo				the_content();
 							echo			"</div>\n";
-							
+
 							}
 							echo		"</div>\n";
-						
+
 						echo    "</a>\n";
 						endwhile;
 						wp_reset_postdata();
@@ -67,15 +67,15 @@ get_header(); ?>
 							//echo				"<h1>" . get_the_title() . "</h1>\n";
 							echo				the_content();
 							echo			"</div>\n";
-								
+
 								}
 							echo		"</div>\n";
-						
+
 							echo    "</a>\n";
-						
+
 						endwhile;
 						echo    "</div>\n";
-						
+
 						echo    "<a class='left carousel-control' href='#carouselSlider' role='button' data-slide='prev'>\n";
 						echo        "<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>\n";
 						echo 					"<span class='sr-only'>Previous</span>\n";
@@ -84,13 +84,13 @@ get_header(); ?>
 						echo        "<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>\n";
 						echo 				"<span class='sr-only'>Next</span>\n";
 						echo    "</a>\n";
-						
+
 						echo "</div>\n";
-						
+
 					}
 					wp_reset_postdata();
 				?>
-			
+
 			</div>
 		</div>
 	</div>
@@ -231,11 +231,13 @@ get_header(); ?>
 </div><!--close of the Messenger -->
 
 <div class="margin-top large-margin-bottom text-center">
-	<!-- BEGIN: Constant Contact Email List Form Button --><div align="center"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=g94wgzsab&amp;p=oi&amp;m=1119684886342&amp;sit=lu4gbdljb&amp;f=e3e0b94f-7580-4c53-b67c-6c7f6d38f730" class="button" style="background-color: rgb(11, 102, 78); border: 0px solid rgb(91, 91, 91); color: rgb(255, 255, 255); display: inline-block; padding: .4em .75em; text-shadow: none; border-radius: 60px; font-size:1.65rem; box-shadow: 0 9px 6px -6px black; max-width: 310px; width:100%; letter-spacing: .3px;">Subscribe to the MBM Newsletter</a>
-	
+	<h1 style="color: rgb(59,58,55); font-family:'geometr415_md', sans_serif;">GET OUR NEWSLETTER</h1>
+	<p style="font-size:1.5rem; letter-spacing: .3px;">Receive project updates, MBM happening and more</p>
+	<div class="margin-top">
+	<!-- BEGIN: Constant Contact Email List Form Button --><div align="center"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=g94wgzsab&amp;p=oi&amp;m=1119684886342&amp;sit=lu4gbdljb&amp;f=e3e0b94f-7580-4c53-b67c-6c7f6d38f730" class="button" style="background-color: rgb(11, 102, 78); border: 0px solid rgb(91, 91, 91); color: rgb(255, 255, 255); display: inline-block; padding:1em; text-shadow: none;  font-size:1.5rem; box-shadow: 0 3px 3px -1px black; letter-spacing: .5px; font-family:'geometr415_lt', sans_serif;">SUBSCRIBE HERE</a>
 	</div>
-	<!--<a href="https://visitor.r20.constantcontact.com/d.jsp?llr=g94wgzsab&amp;p=oi&amp;m=1119684886342&amp;sit=lu4gbdljb&amp;f=e3e0b94f-7580-4c53-b67c-6c7f6d38f730" target="_blank">
-	<img src="/wp-content/themes/contractor-child/images/BtnSubscribe.jpg" />-->
+	</div>
+
 </div>
 
 <script>
