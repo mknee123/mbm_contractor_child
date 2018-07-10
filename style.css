@@ -9,6 +9,9 @@ Version: 0.1.0
 */
 
 /* special width styles */
+html {
+	background: white !important;
+}
 body {
   overflow-x:hidden;
 }

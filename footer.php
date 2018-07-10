@@ -41,14 +41,14 @@
 				<div class="col-sm-4 hidden-xs thin-margin-top">
 							<div class="col-sm-4 hidden-xs text-center">
 							<a href="https://www.facebook.com/mbmcontractinginc" title="Facebook Link" target="_blank"><img alt="facebook link" class="image-logo thin-inter-padding" src="/wp-content/themes/contractor-child/images/Icon_Facebook.svg" style="max-width:45px; margin-bottom: 5px;" ></a><br />
-							<a href="https://twitter.com/mbm_contracting" title="Twitter Link" target="_blank"><img alt="Twitter link" class="image-logo thin-inter-padding" src="/wp-content/themes/contractor-child/images/Icon_Twitter.svg" style="max-width:45px; margin-bottom: 5px;" ></a><br />
+							<a href="https://www.instagram.com/mbm_contracting/" title="Instagram Link" target="_blank"><img alt="Twitter link" class="image-logo thin-inter-padding" src="/wp-content/themes/contractor-child/images/Icon_Instagram.svg" style="max-width:45px; margin-bottom: 5px;" ></a><br />
 							<a href="http://www.linkedin.com/company/mbm-contracting-inc-" title="LinkedIn Link" target="_blank"><img alt="linkedIn link" class="image-logo thin-inter-padding" src="/wp-content/themes/contractor-child/images/Icon_LinkedIn.svg" style="max-width:45px; margin-bottom: 5px;"></a>
 				</div>
 				</div>
 				<div class="col-sm-4 visible-xs margin-top">
 							<div class="col-sm-4 visible-xs text-center">
 							<a href="https://www.facebook.com/mbmcontractinginc" title="Facebook Link" target="_blank"><img alt="facebook link" class="image-logo thin-inter-padding" src="/wp-content/themes/contractor-child/images/Icon_Facebook.svg" style="max-width:45px; margin-bottom: 5px;" ></a>
-							<a href="https://twitter.com/mbm_contracting" title="Twitter Link" target="_blank"><img alt="Twitter link" class="image-logo thin-inter-padding" src="/wp-content/themes/contractor-child/images/Icon_Twitter.svg" style="max-width:45px; margin-bottom: 5px;" ></a>
+							<a href="https://www.instagram.com/mbm_contracting/" title="Instagram Link" target="_blank"><img alt="Twitter link" class="image-logo thin-inter-padding" src="/wp-content/themes/contractor-child/images/Icon_Instagram.svg" style="max-width:45px; margin-bottom: 5px;" ></a>
 							<a href="http://www.linkedin.com/company/mbm-contracting-inc-" title="LinkedIn Link" target="_blank"><img alt="linkedIn link" class="image-logo thin-inter-padding" src="/wp-content/themes/contractor-child/images/Icon_LinkedIn.svg" style="max-width:45px; margin-bottom: 5px;"></a>
 				</div>
 				</div>
