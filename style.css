@@ -253,9 +253,8 @@ body {
 		}
   h2.homepage-h2 {
     font-size: 2.25em;
-    color: black;
-    font-weight: 300 !important;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: rgb(59,58,55);
+    font-family: 'geometr415_md', sans-serif;  
   }
 
   /* Our Work */
