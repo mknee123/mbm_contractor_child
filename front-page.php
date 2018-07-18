@@ -94,6 +94,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+	<!--<div class="tag-line-bar hidden-xs"></div>-->
 <div class="container-fluid thin-margin-top thin-margin-bottom" id="scrollDown">
 	<a href="#about" class="arrow-scroll"><p class="animated infinite pulse"><i class="down"></i></p></a>
 </div>
@@ -204,7 +205,7 @@ get_header(); ?>
 						'order'          => 'asc'
 					));
 					if ($the_query->have_posts()) {
-						echo '<h2 class="homepage-h2 text-center medium-margin-top medium-margin-bottom subtitle fancy2"><span id="fancy_show">The Messenger</span></h2>';
+						echo '<h2 class="homepage-h2 text-center medium-margin-top medium-margin-bottom subtitle fancy2"><span id="fancy_show">MBM In The News</span></h2>';
 
 						echo '<section id="our-links" class="width-85">';
 						while ($the_query->have_posts()) {
