@@ -94,7 +94,17 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-	<!--<div class="tag-line-bar hidden-xs"></div>-->
+	<div class="tag-line-bar hidden-xs"></div>
+	<div class="tag-line-bar-mobile visible-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center thin-margin-top thin-margin-bottom">
+			<span class="text-uppercase"><strong>Trusted Partner in<br>
+			Building Success</strong></span>
+		</div>
+		</div>
+		</div>
+	</div>
 <div class="container-fluid thin-margin-top thin-margin-bottom" id="scrollDown">
 	<a href="#about" class="arrow-scroll"><p class="animated infinite pulse"><i class="down"></i></p></a>
 </div>
@@ -210,14 +220,14 @@ get_header(); ?>
 						echo '<section id="our-links" class="width-85">';
 						while ($the_query->have_posts()) {
 							$the_query->the_post();
-							echo '<div class="col-sm-4 col-xs-12 text-center color-inherit margin-bottom internal-padding no-decoration">';
+							echo '<div class="col-sm-4 col-xs-12 color-inherit margin-bottom internal-padding no-decoration">';
 							echo '<a href="' . esc_html(get_post_meta(get_the_ID(), '_cmb2_url', true)) . '" target="' . esc_html(get_post_meta(get_the_ID(), '_cmb2_target', true)) . '">';
 							echo '<div class="featured-image">';
 							echo get_the_post_thumbnail();
 							echo '</div>';
 							echo '</a>';
 							echo '<div class="link-content thin-margin-top">';
-							echo '<p class="text-muted">' . get_the_date('F j, Y') . '</p>';
+							echo '<p class="text-muted"><strong>' . get_the_date('F j, Y') . '</strong></p>';
 							echo '<h4>' . get_the_title() . '</h4>';
 							echo '<div class="width-85 text-left">' . get_the_content() . '</div>';
 							echo '</div>';
