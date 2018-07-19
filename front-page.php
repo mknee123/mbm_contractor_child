@@ -94,13 +94,14 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-	<div class="tag-line-bar hidden-xs"></div>
+	<div class="tag-line-bar hidden-xs">
+		<img src="/wp-content/themes/contractor-child/images/Trans_Horizontal.png" class="img-responsive" />
+	</div>
 	<div class="tag-line-bar-mobile visible-xs">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center thin-margin-top thin-margin-bottom">
-			<span class="text-uppercase"><strong>Trusted Partner in<br>
-			Building Success</strong></span>
+			<span class="text-uppercase"><strong>Trusted Partner in	Building Success</strong></span>
 		</div>
 		</div>
 		</div>

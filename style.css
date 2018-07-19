@@ -162,13 +162,14 @@ body {
 	.tag-line-bar {
 		position: absolute;
 		z-index: 0;
-		top: 115px;
-		background-image: url(images/Trans.png);
+		top: 180px;
+	/*	background-image: url(images/Trans_Horizontal.png);
 		background-repeat: no-repeat;
-		background-position: center;
-		left: 6%;
-		max-height: 834px;
-		max-width: 468px;
+		background-position: center; */
+		left: 0;
+		max-width: 1259px;
+		width:100%;
+		height:100%;
 	}
 	.tag-line-bar-mobile {
 		background: #0B665B;
@@ -179,26 +180,26 @@ body {
 	}
 @media only screen and (max-width: 2000px) and (min-width: 1691px) {
 	.tag-line-bar {
-		height: 100%;
+
 		width: 100%;
 	}
 }
 @media only screen and (max-width: 1690px) and (min-width: 1491px) {
 	.tag-line-bar {
-		height: 100%;
-		width: 80%;
+
+		width: 90%;
 	}
 }
 @media only screen and (max-width: 1490px) and (min-width: 1281px) {
 	.tag-line-bar {
-		height: 100%;
-		width: 70%;
+
+		width: 80%;
 	}
 }
 @media only screen and (max-width: 1280px) and (min-width: 991px) {
 	.tag-line-bar {
-		height: 100%;
-		width: 60%;
+
+		width: 80%;
 	}
 }
 
@@ -224,8 +225,9 @@ body {
 		  bottom: 50px;
 	  }
 		.tag-line-bar {
-			height:100%;
-			width: 50%;
+
+			width: 70%;
+
 		}
 
 	}
@@ -239,8 +241,8 @@ body {
 		  bottom: 18px;
 	  }
 		.tag-line-bar {
-			height:100%;
-			width: 40%;
+
+			width: 70%;
 		}
 
 	}
